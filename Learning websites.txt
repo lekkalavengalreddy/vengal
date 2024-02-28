@@ -1,0 +1,10 @@
+websites:
+
+https://www.w3schools.com/
+ https://www.udemy.com/
+ https://brilliant.org/
+ https://www.hackerrank.com/dashboard
+https://leetcode.com
+
+
+https://www.techntoast.com/2018/09/microsoft-dynamics-365-crm.html#:~:text=Modifying%20its%20face%20or%20user%20interface%20is%20called,roles%2C%20users%2C%20teams%2C%20field%20security%2C%20auditing%2C%20solutions%20etc.

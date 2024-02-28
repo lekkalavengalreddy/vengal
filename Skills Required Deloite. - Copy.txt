@@ -1,0 +1,29 @@
+Skills Required
+
+Proficient with developing, deploying, customizing, and integrating Microsoft Dynamics CRM
+Experience in
+Working on CRM suite (Sales, Customer Service, Field Service, Marketing)
+installing and deploying CRM Organizations with both managed and unmanaged solutions.
+customizing and creating CRM entities
+understanding and implementing business workflows and processes.
+using the CRM SDK and plugin platforms.
+Microsoft .NET 3.5+ development using C#
+JavaScript development
+PowerApps, creation of Model driven apps and Canvas app.
+Portal creation and management
+Source control management systems like GitHub and continuous integration/deployment environments
+Using Azure functions.
+Building WebApps, WebApi, Webjobs
+App services, App Service Environments
+Logic app, Flows.
+Creating and Maintaining Storage accounts
+SQL Databases, stored procedures, and data views
+SSRS & Power BI reports
+ 
+
+Familiarity with :
+Xrm Toolbox
+Powershell
+ 
+
+Ability to perform the performance fine tuning in production environment.

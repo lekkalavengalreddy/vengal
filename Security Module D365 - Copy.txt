@@ -1,0 +1,209 @@
+Security : It is combination of athentiation and autharization.
+
+6. Assign: when entity has Created. Entity has ownership, ownership two types 1. user or Team, 2. Organization . when you create a entity owner field is created and but  when want change the owner when use the assign.
+ex: When you want to change the owner.
+
+7. Share: The record you want to share the user and team but you want to owner is same only.
+
+Ex: I am owning the record, but somebody work on my record.
+
+
+-----------------------------------------------------------------------
+
+Field Level Security:
+ 
+1.  Read( Read -only access to field data)
+2. Create( users or teams can add data to this field when creating a record)
+3. Update( users or teams can update the fields data after it has been created)
+
+4. System administator have all privileges on all field level security fields
+5. Users and teams can be added to mutliple field level security Profiles.
+
+Configuration:
+
+Settings  : securiy->  field security Profile-> new ( Give the name) -> save.
+
+Field Permissions: select fields and click on edit, allow edit (yes), allow update(yes), allow create(yes) and click on okay.
+And teams and users here.
+check the audit history.
+when you creating field there over you can enable the field level security.
+
+----------------------------------------------------------------------------------------------------
+
+Hierarchy Security Model: Two types 1. Manager Hierarchy 2. Position Hierarchy
+
+when Manager and position hierarchy is configure. we are enable to dynamics. Than the hierarchy security will be applied records in dynamics.
+
+
+Manager Hierarchy: some list features working for organization. 
+If you few reporties we can use this.
+Configuration:  Security-> Hierarchy Position ->
+
+
+Position Hierarcy:
+ 
+
+
+-------------------------------
+
+Access Team: 
+      
+1. Access teams are quick way to share records to users.
+2. Access teams don't have security roles, so can not own record.
+3. Use Team template to define security privileges.
+4. Multiple access teams can be linked to a single record.
+5. Access team permissions are not effected when record is deactivated.
+
+When should Use: If you sharing lots of records and dont want to get performanace Effected by POA.
+
+Problem: Access team templates needs to be manually recreated in all your CRM Environments. ( it is not moving one enironment to another enivironment)
+
+Configuration:-
+
+
+1. open any solution -> entity->  open entity-> enable access team in entity level. 
+
+
+Create new Access team Template: When ever your going to create new access team template you need to enable the access team in that entity.
+open security->Create new access team template -> new ->Give the name and choose entity and give access Rights ( delete, append, Append to, read, write, assign, share) -> save and close.
+
+after creating a new access team template you can add that in static way.
+Open the that paticular entity and open main form in that take one tab and add subgrid in that tab.
+give the data sourec column click on okay.
+
+
+
+Append and Append To Privilege Works:
+
+ When we have relationship between two entities. (N:1,1:N)
+ I have two entites student and cource
+In student entity i have 1:N relationship ( N side is cource), Look up always go of N side of relationship.
+Give the student append to privilage and coure give the append privilage it will allow.
+Student we can give append privilage and Coure entity give append privilage try add the record it will not allow the record.
+
+
+
+Business Rules In Dynamic 365:
+
+Minimize the need of complex code. Apply logic without javascript/plugin Introduce in CRM 2013.
+
+Set Field value
+Clear Field value
+Set Field requirement levels
+Validate data and show error messages
+show fields
+hide fields
+enable fields
+disable fields
+create business recommendations.
+
+Scopes:
+
+1. Entity: It executes at server side. The business rule fires whenever that entity is created or saved either from the form inside CRM or from any web application.
+
+2. All Forms:  It Executes at client side. Business rule is fired when the form is loaded or updated only at the client CRM Form.
+
+3. A Specific Form: There will be one of these for each main form you have. This business rule will only run on the form seleted. This is the lowest level of scope and provides flexibility to provide different experiences on different forms.
+
+
+
+Limitations:
+
+1. Not executed during bulk edits and imports.
+2. Cant interact with tabs and sections.
+3. Business rule cant call javascript.
+4. Acts ony on the fields of local entities and not on the related entities fields.
+5. it cannot be debug like js.
+6. 10 if else statments can be configured.
+7.There is no control on execution of business rule.
+8. Execution order: system javascript > custom Java script >business rule.
+9. Action performed in business rule are limited as campared to java script.
+
+
+
+Entity Form:
+
+Form provide user interface to people to capture the data. In default or unmanaged solution, we can create new form or edit any existing forms. In managed solutions we cannot new form and cannot customize existing form.
+
+1. Main form
+2. Quick View Form
+3. Card Form
+4. Quick Create Form
+
+1. Quick View Form:
+ It allow us to view the details about related entity inside the form of another entity.
+It is associated to the lookup field.
+If lookup field is not having any value, the quick view form will not be displayed.
+we cannot edit the value of field which displayed in quick view form.
+It donot have header, footer, navigation details in form. it will have just body details with single column tab.
+we can not add security role to quick view form.
+
+ 2. Quick Create Form:
+We can enable the custom entity for quick create. We cannot use Create button from navbar to et the quick Create. It should be used only from Add new record from Sub-grid.
+we can have mutliple quick create form but at a time only quick create form will be used. by using the form order we can set the quick create form to be used by all and we can not switch between two quick create form like main forms.
+in form design will have one section and three by system and we cannot add new section or columns to create form.
+we cannot set the security role to quick create form.
+
+Customizations:
+--------------------
+entity creation, field, js, C#, Plugin, Custom Work flow, action, dailog, BPF.
+
+
+
+-----------------------------------
+
+
+Solutions:  Microsoft instroduced the concept of Managed and Unmanaged solutions in dynamics CRM 2011.
+
+Default System Solution: It contains out of the box CRM Components without any customizations.
+
+Unmanaged Solutions:
+1. An unmanaged solution is like a container, which contains multiple customizations. It can be imported to target instance to load those customizations.
+2. Deleting unmanaged solution will delete only solution but not the component associated to it. Components need to be deleted individually. so, there is some risk.
+3. Unmanaged solution allows to change customization in target instance also, due to which can have conflict between your source and target instance customization.
+4. Another challenge is that it is not possible to rollback changes which are effect by unmanaged solution.
+5. Delete - if you delete the component from unmanaged solution, it will get delete from system itself. it no longer exists in CRM.
+6. Remove: If you dont want to include component, we can remove it from solution but it exist in system.
+
+
+Deleting unmanaged solution in target solution: Open solution check the dependencies.
+open solution -> choose entity-> select field or form-> more action -> show dependencies -> here you see the dependencies list -> open the form and remove the  dependencies.-> save and publish.
+
+
+ -------------
+Managed Solutions:
+
+1. Managed solution can be installed on top of system solution/managed solution.
+2. Managed solution is also like a container, which contains customization, but components can be locked/unlocked when it is imported into target instance.
+3. We can make which component of solution can be modified in target instance by using managed properties in solution.
+4. There is another risk involved in managed solution:- deleting managed solution will delete component associated to it from system. so data involved in those custom components will also removed.
+5. Deleting or uninstalling managed solution is not preferable, instead of that we can use patch solution to update changes in managed solution.
+
+-------------------
+Unmanaged Solution: When installed in unmanaged solutions in dynamics, it will impacting in system solution(default), any changes included in unmanaged solution,
+ it will be contain saperate package. When you remove this package or component in manage solution than, component apackage can remove that package. Unmanaged solution the component still there in default solution but in case of managed solution it will remove.
+
+
+1. We can delete the unmanaged solution but component is still present. We want remove system in individually.
+2. We cannot install unmanaged solution on the top of managed solutions. You cannt install same solution manage unmanage. you should be only ones. There is limitation before we install the target instance.
+3. 
+
+Patch Solutions:
+---------------------
+
+1. Patch solution apply to either managed or unmanaged solutions and include only changes to entities and related entity assets.
+2. We can create the patch from parent solution using 'Clone as Patch' & parent solution can not be patch solution.
+3. We can install the patch solution to target if only the parent solution is deployed already.
+4.  We can not install the unmanaged patch to manages base solution. It should match the type of base solution. 
+5.  We can not remove component from solution using patch, it supports, adding or updating tthe components.
+6. The Vesion number of patch much have same major and minor number, but we should update build and release number every time when deploy the new patch.
+7. Patch solution type feature is available from CRM version 8.0 or Higher.
+
+
+
+How To Use package Deployment Tool to deploy solution and Configuration Data:
+
+
+1. It will automate deployment process. Before I deploy the process few things is installed first.
+2. Visual studio 2019 and add solution and extenstion Microsoft Dynamic CRM SDK Templates.
+

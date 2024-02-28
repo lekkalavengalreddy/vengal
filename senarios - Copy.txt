@@ -1,0 +1,18 @@
+Microsoft Dynamics CRM is a customer relationship management software that helps organizations manage their customer interactions, sales, and marketing efforts. While it is not a healthcare-specific software, it can be adapted for use in healthcare organizations to manage patient interactions and data.
+Here are some ways healthcare organizations can use Dynamics CRM:
+1.	Patient management: Dynamics CRM can be used to manage patient interactions, such as scheduling appointments, managing patient records, and tracking patient history.
+2.	Marketing: Healthcare organizations can use Dynamics CRM to manage marketing campaigns, such as sending out newsletters or promotions to patients.
+3.	Sales management: Dynamics CRM can be used to manage sales processes, such as tracking leads and opportunities, managing contracts, and generating quotes.
+4.	Analytics: Healthcare organizations can use Dynamics CRM to generate reports and analyze data related to patient interactions, marketing campaigns, and sales processes.
+5.	Customer service: Dynamics CRM can be used to manage customer service interactions, such as tracking customer inquiries and resolving issues.
+Overall, Dynamics CRM can be a useful tool for healthcare organizations to manage their patient interactions and data, and to streamline their sales and marketing efforts. However, it is important to ensure that any patient data stored in Dynamics CRM is kept secure and in compliance with relevant privacy regulations.
+
+
+
+2.	Online Shopping or payment (pay tm or Cred): WE have online shopping, 
+ When you make a purchase online, you might be asked to create an account with the retailer or provide your email address. This information is often stored in a CRM system that allows the retailer to track your buying habits and preferences. With this information, the retailer can personalize their marketing and promotional messages to you, suggest products you may be interested in, and provide better customer service.
+
+
+3.  Park Maintenance: The one public park is providing the good nature feeling to people with friendly cost, but they are facing maintenance problem, they want to track condition of grace, and maintenance, check the weather conditions like. They need sale, marketing and service services. So, this satiation helps to track the information and providing good service and track the people information (like how many people are visited the park, money, any required things are missing in the parks), take the people valuable feedback, everything covered in single platform. 
+
+4. Living or Hotel Management: Few days back I visited a hotel, they have so many branches in located in same city, they are unable to track the employee working performance and they give good service to the people or not and the management is decided the give good service to the people with any fail. This situation Dynamic CE is helps to track the employee performance at same give the service to customer.

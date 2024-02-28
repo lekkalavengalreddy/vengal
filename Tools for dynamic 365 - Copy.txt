@@ -1,0 +1,26 @@
+Tools for dynamic 365:
+
+
+1.Dynamic 365 SDK link : https://learn.microsoft.com/en-us/dynamics365/customerengagement/on-premises/developer/download-dynamics-365-sdk-v9?view=op-9-1
+
+2.Plugin Registration Tool : 
+
+3.CRMSVCUtil:
+
+4.XRM Toolbox:
+
+5.LevelUp (chrome)
+
+6.Sitemap Editor : https://www.xrmtoolbox.com/plugins/MsCrmTools.SiteMapEditor/
+
+7.Ribbon workbench 
+https://www.develop1.net/public/rwb/ribbonworkbench.aspx
+
+8.Fetch XML Builder
+
+9.Odata Query Designer
+
+10.Metadata Browser:
+1. Edgelink: https://microsoftedge.microsoft.com/addons/detail/metadata-browser-for-data/fdfelmicclblfanogpnejdogjjildbkf
+
+2. Chrome Link: 

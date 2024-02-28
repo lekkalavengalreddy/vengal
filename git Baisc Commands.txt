@@ -1,0 +1,92 @@
+git init
+add . // gitigore (obj/bin)
+git status
+git add .
+git commit -m " Initial Commit"
+git status
+
+code . // Edit index html 
+git add.
+git commit -m "index title updated"
+git status
+git log
+
+git remote add origin <url>
+git pull origin master
+
+git clone <url>
+git pull origin master 
+
+Pushing and pulling code to remote Repository: local repository to remote in repos, than azure repos how some other devops downlode the code and work on the same remote repository.
+
+1. dev.azure.com
+2. Create new Project same as my solution name.
+3. Open repos push an existing repository from commands. 
+
+// commands
+
+git remote add origin https://lekkalavengalreddy3@dev.azure.com/lekkalavengalreddy3/HelloWorldDemo/_git/HelloWorldDemo
+
+
+https://lekkalavengalreddy14@dev.azure.com/lekkalavengalreddy14/Attendance%20Monitoring%20Solution
+
+
+git push origin master // send changes into master branch.
+
+Another user: get the remote repository. he can clone the repository then he gets the Complete project.
+
+for that: open repos here clone repository copy the command.hitting into their local repository complete server.
+
+https://lekkalavengalreddy3@dev.azure.com/lekkalavengalreddy3/HelloWorldDemo/_git/HelloWorldDemo
+
+
+cmd: git clone (here paste the clone repository link).
+
+
+user 1: This guy is make changes in local machine, that is pushing to remote repo. 
+cammads :
+ git commit -m" user1 change " -a
+ git push origin master 
+
+
+User 2: But user not get any update his local machine, he wants updates for that pulling the data from remote repositary.
+
+Commands: git pull origin master.
+
+code .
+
+---
+
+Branches and merge:
+
+
+create a feature branch:
+
+git checkout features/f1
+
+code . // inside that change make changes.
+
+
+git checkout master
+
+see git log // status, what is changes did in feature f1 that will merge into master branch.
+
+git merge feature/f1 // now you can get all changes in master branch.
+
+git push origin master
+
+git remote add origin url
+
+git push -u origin --all
+
+
+---------------
+
+git init
+git commit -m "newchanges"
+git add .
+git remote add origin url
+git commit -m " user1 " -a
+git push origin master
+
+

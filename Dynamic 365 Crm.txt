@@ -1,0 +1,10 @@
+Dynamic 365 Crm:
+---------------------
+
+
+CRM nothing but Customer Relationship Management. It will give the business logic.
+
+Before implement the Crm there are four required steps need to no developers.
+
+
+1. 
